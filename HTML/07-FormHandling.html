@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form Handling</h1>
+
+    <!-- Login / Search / Register / Comment / Upload / Post  -->
+
+    <form action="#" method="get" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Registration Form</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="u_name">Enter Name</label>
+            </td>
+            <td>
+              <input type="text" id="u_name" name="username" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="u_pwd">Enter Password</label>
+            </td>
+            <td>
+              <input type="password" id="u_pwd" name="password" />
+            </td>
+          </tr>
+          <tr>
+            <td>Select Gender</td>
+            <td>
+              <input type="radio" id="m" name="gender" value="male" /><label
+                for="m"
+                >Male</label
+              >
+              <input type="radio" id="f" name="gender" value="female" /><label
+                for="f"
+                >Female</label
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td>Select Sports</td>
+            <td>
+              <input type="checkbox" />Hockey <input type="checkbox" />Chess
+              <input type="checkbox" />Cricket <input type="checkbox" />Tennis
+            </td>
+          </tr>
+          <tr>
+            <td>Select Country</td>
+            <td>
+              <select name="country">
+                <!-- <option>Select Country</option>
+              <option value="bh">Bharat</option>
+              <option value="us">US</option>
+              <option value="uk">UK</option>
+              <option value="rs">Russia</option> -->
+
+                <optgroup label="Asia">
+                  <option value="bh">Bharat</option>
+                  <option value="chn">China</option>
+                  <option value="vn">Vietnam</option>
+                  <option value="sl">Sri Lanka</option>
+                </optgroup>
+
+                <optgroup label="South America">
+                  <option value="cl">Chile</option>
+                  <option value="br">Brazil</option>
+                  <option value="ar">Argentina</option>
+                </optgroup>
+
+                <optgroup label="North America">
+                  <option value="us">US</option>
+                  <option value="cn">Canada</option>
+                  <option value="mx">Mexico</option>
+                </optgroup>
+
+                <optgroup label="Europe">
+                  <option value="fr">France</option>
+                  <option value="it">Italy</option>
+                  <option value="gr">Germany</option>
+                  <option value="uk">Uk</option>
+                  <option value="nd">Netherland</option>
+                </optgroup>
+
+                <optgroup label="Africa">
+                  <option value="sa">South Africa</option>
+                  <option value="zm">Zimbabwe</option>
+                  <option value="mq">Mozambique</option>
+                  <option value="sm">Somalia</option>
+                </optgroup>
+
+                <optgroup label="Australia">
+                  <option value="au">Australia</option>
+                  <option value="nz">New Zealand</option>
+                </optgroup>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="submit" value="Login" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
